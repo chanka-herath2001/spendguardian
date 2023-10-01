@@ -78,6 +78,17 @@ class _HomePageState extends State<HomePage> {
             'Home',
           ),
           titleSpacing: 110.0,
+          actions: <Widget>[
+            Padding(
+              padding: EdgeInsets.only(
+                  right: 5.0), // Adjust the right padding as needed
+              child: Image.asset(
+                'assets/images/logo-no-background.png', // Replace with the path to your app logo
+                width: 40.0, // Adjust the width as needed
+                height: 40.0, // Adjust the height as needed
+              ),
+            ),
+          ],
         ),
         body: SingleChildScrollView(
           child: Column(

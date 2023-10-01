@@ -78,7 +78,17 @@ class _TransactionsPageState extends State<TransactionsPage> {
         appBar: AppBar(
           backgroundColor: isDarkMode ? Color(0xFF2E4F4F) : Color(0xFF1F332C),
           title: Text('Transactions'),
-          titleSpacing: 80.0,
+          titleSpacing: 77.0,
+          actions: <Widget>[
+            Padding(
+              padding: EdgeInsets.only(right: 5.0),
+              child: Image.asset(
+                'assets/images/logo-no-background.png',
+                width: 40.0,
+                height: 40.0,
+              ),
+            ),
+          ],
         ),
         body: SingleChildScrollView(
           child: Padding(
